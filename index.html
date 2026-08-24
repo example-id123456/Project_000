@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>कथा दीप — Indian Story Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">ॐ</div>
+      <div>
+        <h1>कथा दीप</h1>
+        <p>Indian Story Reader</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="fontDecrease" class="control-btn" aria-label="Decrease font size">A−</button>
+      <button id="fontIncrease" class="control-btn" aria-label="Increase font size">A+</button>
+      <button id="themeToggle" class="control-btn" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </header>
+
+  <div class="progress-wrap">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="side-title">अध्याय</div>
+      <button class="chapter active" data-chapter="0">अध्याय 1 — आरंभ</button>
+      <button class="chapter" data-chapter="1">अध्याय 2 — यात्रा</button>
+      <button class="chapter" data-chapter="2">अध्याय 3 — सीख</button>
+      <button class="chapter" data-chapter="3">अध्याय 4 — वापसी</button>
+
+      <div class="reading-note">
+        <div class="note-icon">🪔</div>
+        <strong>Reading Mode</strong>
+        <p>आराम से पढ़ें। स्क्रीन पर अपनी पसंद का फ़ॉन्ट आकार चुनें।</p>
+      </div>
+    </aside>
+
+    <section class="reader">
+      <div class="story-header">
+        <span class="tag">भारतीय कथा</span>
+        <h2 id="chapterTitle">अध्याय 1 — आरंभ</h2>
+        <p id="chapterMeta">लगभग 3 मिनट का पठन</p>
+      </div>
+
+      <article id="storyText" class="story-text">
+        <p>बहुत समय पहले, भारत के एक छोटे से गाँव में आरव नाम का एक जिज्ञासु युवक रहता था। गाँव के चारों ओर हरे-भरे खेत, पुराने बरगद के पेड़ और दूर दिखाई देता एक शांत पहाड़ था।</p>
+
+        <p>आरव को अपने दादा से पुरानी कथाएँ सुनना बहुत पसंद था। दादा अक्सर कहते, “सच्ची यात्रा पैरों से नहीं, मन से शुरू होती है।” यह बात आरव के मन में बस गई थी।</p>
+
+        <div class="quote">“जहाँ जिज्ञासा होती है, वहीं से ज्ञान की राह खुलती है।”</div>
+
+        <p>एक सुबह सूरज की पहली किरणों के साथ आरव ने गाँव छोड़कर पहाड़ की ओर जाने का निश्चय किया। उसके पास एक छोटा सा थैला, पानी की बोतल और दादा का दिया हुआ दीपक था।</p>
+
+        <p>उसे नहीं पता था कि आगे क्या मिलेगा, लेकिन उसके मन में डर से अधिक उत्साह था। यही उसकी यात्रा का पहला कदम था।</p>
+      </article>
+
+      <div class="reader-footer">
+        <button id="prevBtn" class="nav-btn">← पिछला</button>
+        <span id="chapterCount">1 / 4</span>
+        <button id="nextBtn" class="nav-btn primary">अगला →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>ॐ</span> कथाएँ • शांति • ज्ञान
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
